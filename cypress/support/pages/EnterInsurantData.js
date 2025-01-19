@@ -8,8 +8,6 @@ const SELECT_HOBBIES = 'label.ideal-radiocheck-label'
 const BTN_NEXT = '#nextenterproductdata'
 
 
-
-
 Cypress.Commands.add('inserirDadosInsurant', () => {
     cy.get(INPUT_FIRSTNAME).type('daniel')
     cy.get(INPUT_LASTNAME).type('silva')

@@ -27,4 +27,5 @@ import './pages/SendQuote'
         if (err.message.includes('e is not defined')) {
             return false
         }
-    })
+    })  //Dica de uma aluna da turma para evitar o erro
+    

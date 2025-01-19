@@ -36,9 +36,10 @@ Cypress.Commands.add('clicarbotao', () => {
 })
 
 Cypress.Commands.add('inserirDadosNegative', () => {
-    
-    cy.get(INPUT_CCM).type('20000000');
+        cy.get(INPUT_CCM).type('20000000');
     
  })
 Cypress.Commands.add('mensagemErro', () => {
-    cy.contains('.error', 'Must be a number between 1 and 2000').should('be.visible')})
+    cy.contains('.error', 'Must be a number between 1 and 2000').should('be.visible') //aqui capturei a mensagem de erro que dá na tela e utilizei o contains para isso
+})
+    

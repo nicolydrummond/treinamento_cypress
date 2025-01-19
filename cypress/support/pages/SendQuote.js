@@ -21,7 +21,7 @@ Cypress.Commands.add('btnsend', () => {
 })
 
 Cypress.Commands.add('validarMensagemDeSucesso', () => {
-    cy.get(ALERT_MESSAGE, { timeout: 10000 }) // Espera até 10 segundos pelo elemento
+    cy.get(ALERT_MESSAGE, { timeout: 10000 }) ///alterando o alert messsage a ter um novo tempo, pois o cypress tem o tempo fixo de quatro segundos.
         .should('be.visible') // Verifica se está visível
         .and('contain', 'Sending e-mail success!');
         
